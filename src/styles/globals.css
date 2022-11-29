@@ -1,0 +1,42 @@
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  font: var(--base-font-weight) var(--base-font-size)/var(--base-line-height) var(--base-font-family);
+  color: var(--c-dark);
+  background-color:  var(--c-gray);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.error {
+  font-size: 0.8em;
+  line-height: 1;
+  color: red;
+}
+
+svg * {
+  fill: currentColor;
+}
+
+input,
+input::placeholder,
+button,
+a,
+svg * {
+  transition: var(--base-transition-duration);
+}

@@ -1,0 +1,41 @@
+.input {
+  --paddingX: 28px;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--input-height);
+  padding-left: var(--paddingX);
+  padding-right: var(--paddingX);
+  font-size: 18px;
+  color: var(--c-dark);
+  background-color: var(--c-light);
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.input::placeholder {
+  color: var(--c-gray-3);
+}
+
+.input:hover {
+  border-color: var(--c-dark);
+}
+
+.input:focus {
+  border-color: var(--c-accent);
+  outline: none;
+}
+
+.input.is-invalid {
+  border-color: red;
+}
+
+textarea.input {
+  --paddingY: calc(var(--input-height) / 4);
+
+  min-height: 200px;
+  padding-top: var(--paddingY);
+  padding-bottom: var(--paddingY);
+  resize: none;
+}

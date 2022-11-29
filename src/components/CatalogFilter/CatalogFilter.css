@@ -1,0 +1,4 @@
+.catalog-filter__category-button.is-active {
+  color: var(--c-dark);
+  background-color: var(--c-accent);
+}

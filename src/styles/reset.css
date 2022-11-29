@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+input,
+button,
+select {
+  font: inherit;
+  color: inherit;
+}

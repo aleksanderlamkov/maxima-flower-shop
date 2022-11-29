@@ -1,0 +1,29 @@
+.counter {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  min-height: 30px;
+  font-size: 16px;
+  border: 1px solid var(--c-accent);
+  border-radius: var(--border-radius);
+}
+
+.counter__button {
+  --size: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--size);
+  height: var(--size);
+  font-size: 24px;
+  color: var(--c-accent);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.counter__button:hover {
+  color: var(--c-dark);
+}

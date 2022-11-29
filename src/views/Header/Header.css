@@ -1,0 +1,18 @@
+.header {
+  background-color: var(--c-light);
+}
+
+.header__menu-list {
+  display: flex;
+  list-style: none;
+  column-gap: 24px;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  color: var(--c-dark);
+}
+
+.header__menu-link.is-active {
+  color: var(--c-accent);
+}
