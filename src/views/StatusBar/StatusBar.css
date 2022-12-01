@@ -1,0 +1,43 @@
+@keyframes fade-out-right {
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.status-bar {
+  position: absolute;
+  z-index: 100;
+  bottom: 30px;
+  left: 30px;
+  pointer-events: none;
+}
+
+.status-bar__list {
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: flex-start;
+   row-gap: 5px;
+   list-style: none;
+ }
+
+.status-bar__item {
+  display: flex;
+  animation: fade-out-right 0.5s ease-in forwards reverse;
+  animation-iteration-count: 1;
+}
+
+.status-bar__item:empty {
+  display: none;
+}
+
+.status-bar__label {
+  padding: 4px 14px;
+  font-size: 20px;
+  background-color: var(--c-accent);
+  border: 1px solid var(--c-dark);
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(40px);
+  animation: fade-out-right 0.5s var(--expirationTimeMS) ease-in;
+  animation-iteration-count: 1;
+}

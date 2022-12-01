@@ -22,6 +22,20 @@ const FeedbackForm = () => {
 
   const [country, setCountry] = useState('russia')
 
+  const onSubmit = (event) => {
+    event.preventDefault()
+
+    const isValid = validate()
+
+    if (isValid) {
+      const formNode = event.target
+      const formData = new FormData(formNode)
+      const formDataFormatted = Object.fromEntries(formData)
+
+      console.debug(formDataFormatted)
+    }
+  }
+
   const validate = () => {
     let hasError = false
 
@@ -56,20 +70,6 @@ const FeedbackForm = () => {
     return !hasError
   }
 
-  const onSubmit = (event) => {
-    event.preventDefault()
-
-    const isValid = validate()
-
-    if (isValid) {
-      const formNode = event.target
-      const formData = new FormData(formNode)
-      const formDataFormatted = Object.fromEntries(formData)
-
-      console.debug(formDataFormatted)
-    }
-  }
-  
   return (
     <form className="feedback-form" onSubmit={onSubmit}>
       <div className="feedback-form__item">

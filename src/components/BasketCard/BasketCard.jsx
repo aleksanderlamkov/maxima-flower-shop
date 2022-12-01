@@ -1,7 +1,7 @@
 import React from 'react'
 import Counter from '../Counter/Counter'
 import './BasketCard.css'
-import { removeFromBasket, increaseBasketItem, decreaseBasketItem } from '../../store/basketSlice'
+import { removeFromBasket, increaseBasketItem, decreaseBasketItem } from '../../store/slices/basketSlice'
 import { useDispatch } from 'react-redux'
 
 const BasketCard = (props) => {

@@ -1,0 +1,8 @@
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}

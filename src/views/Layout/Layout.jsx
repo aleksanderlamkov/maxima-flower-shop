@@ -4,6 +4,7 @@ import Header from '../Header/Header'
 import Content from '../Content/Content'
 import Footer from '../Footer/Footer'
 import './Layout.css'
+import StatusBar from '../StatusBar/StatusBar'
 
 const Layout = () => {
   return (
@@ -13,6 +14,7 @@ const Layout = () => {
         <Outlet />
       </Content>
       <Footer className="layout__footer" />
+      <StatusBar />
     </div>
   )
 }

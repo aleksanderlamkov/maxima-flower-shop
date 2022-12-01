@@ -1,4 +1,9 @@
-.header {
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
   background-color: var(--c-light);
 }
 
@@ -15,4 +20,35 @@
 
 .header__menu-link.is-active {
   color: var(--c-accent);
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5em;
+}
+
+.header__user svg {
+  --size: 24px;
+
+  width: var(--size);
+  height: var(--size);
+}
+
+.header__user svg * {
+  fill: var(--c-accent);
+}
+
+.header__user-log-out-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.header__user svg:hover * {
+  fill: var(--c-dark);
 }

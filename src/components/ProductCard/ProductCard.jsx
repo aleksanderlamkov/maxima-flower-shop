@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import './ProductCard.css'
 import Counter from '../Counter/Counter'
 import { useDispatch, useSelector } from 'react-redux'
-import { addToBasket, increaseBasketItem, decreaseBasketItem } from '../../store/basketSlice'
+import { addToBasket, increaseBasketItem, decreaseBasketItem } from '../../store/slices/basketSlice'
+import { addStatus } from '../../store/slices/statusesSlice'
 
 const ProductCard = (props) => {
   const {
@@ -26,7 +27,9 @@ const ProductCard = (props) => {
 
   const onBuyButtonClick = () => {
     dispatch(addToBasket(id))
-    // alert('Product has been added to card!')
+    dispatch(addStatus({
+      label: `Product "${title}" has been added to basket!`
+    }))
   }
 
   return (

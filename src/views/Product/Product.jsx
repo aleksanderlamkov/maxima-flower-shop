@@ -1,7 +1,7 @@
 import React from 'react'
 import Counter from '../../components/Counter/Counter'
 import { useDispatch, useSelector } from 'react-redux'
-import { addToBasket, increaseBasketItem, decreaseBasketItem } from '../../store/basketSlice'
+import { addToBasket, increaseBasketItem, decreaseBasketItem } from '../../store/slices/basketSlice'
 
 const Product = (props) => {
   const {
