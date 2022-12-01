@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/maxima-flower-shop/static/css/main.ae3ce3e9.css",
-    "main.js": "/maxima-flower-shop/static/js/main.b9ef4f64.js",
+    "main.js": "/maxima-flower-shop/static/js/main.ce655b6b.js",
     "index.html": "/maxima-flower-shop/index.html",
     "main.ae3ce3e9.css.map": "/maxima-flower-shop/static/css/main.ae3ce3e9.css.map",
-    "main.b9ef4f64.js.map": "/maxima-flower-shop/static/js/main.b9ef4f64.js.map"
+    "main.ce655b6b.js.map": "/maxima-flower-shop/static/js/main.ce655b6b.js.map"
   },
   "entrypoints": [
     "static/css/main.ae3ce3e9.css",
-    "static/js/main.b9ef4f64.js"
+    "static/js/main.ce655b6b.js"
   ]
 }
