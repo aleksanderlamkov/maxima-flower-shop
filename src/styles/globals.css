@@ -44,8 +44,3 @@ a,
 svg * {
   transition: var(--base-transition-duration);
 }
-
-img {
-  width: 100%;
-  object-fit: cover;
-}

@@ -19,6 +19,22 @@ const defaultMenuItems = [
     href: '/feedback',
     label: 'Feedback',
   },
+  {
+    href: '/slider',
+    label: 'Slider',
+  },
+  {
+    href: '/gallery',
+    label: 'Gallery',
+  },
+  {
+    href: '/slider-gallery',
+    label: 'Slider & Gallery',
+  },
+  {
+    href: '/modal',
+    label: 'Modal',
+  },
 ]
 
 const Header = (props) => {

@@ -12,17 +12,16 @@ import './firebase.js'
 import SignInPage from './pages/SignInPage'
 import { PersistGate } from 'redux-persist/integration/react'
 import PrivateRoute from './PrivateRoute'
-import ImageSliderPage from './pages/ImageSliderPage'
+import SliderPage from './pages/SliderPage'
+import GalleryPage from './pages/GalleryPage'
+import SliderGalleryPage from './pages/SliderGalleryPage'
+import ModalPage from './pages/ModalPage'
 
 const App = () => {
-  const isDevMode = process.env.NODE_ENV === 'development'
-  const baseName = isDevMode ? '' : process.env.PUBLIC_URL
-  console.debug('baseName:', baseName)
-
   return (
     <Provider store={store}>
       <PersistGate loading={<h1>Loading...</h1>} persistor={persistor}>
-        <BrowserRouter basename={baseName}>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route
@@ -38,7 +37,10 @@ const App = () => {
               <Route path="/catalog/:id" element={<ProductPage />} />
               <Route path="/sign-in" element={<SignInPage />} />
               <Route path="/sign-up" element={<SignUpPage />} />
-              <Route path="/image-slider" element={<ImageSliderPage />} />
+              <Route path="/slider" element={<SliderPage />} />
+              <Route path="/gallery" element={<GalleryPage />} />
+              <Route path="/slider-gallery" element={<SliderGalleryPage />} />
+              <Route path="/modal" element={<ModalPage />} />
             </Route>
           </Routes>
         </BrowserRouter>
