@@ -1,0 +1,29 @@
+.modal {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+
+.modal:not(.is-open) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal__inner {
+  padding: 30px;
+  background-color: #FFFFFF;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}

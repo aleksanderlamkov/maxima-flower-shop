@@ -4,6 +4,10 @@ body,
   min-height: 100vh;
 }
 
+html.is-locked {
+  overflow: hidden;
+}
+
 body {
   font: var(--base-font-weight) var(--base-font-size)/var(--base-line-height) var(--base-font-family);
   color: var(--c-dark);
@@ -39,4 +43,9 @@ button,
 a,
 svg * {
   transition: var(--base-transition-duration);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
 }
