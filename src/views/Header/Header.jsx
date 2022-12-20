@@ -35,6 +35,10 @@ const defaultMenuItems = [
     href: '/modal',
     label: 'Modal',
   },
+  {
+    href: '/pagination',
+    label: 'Pagination',
+  },
 ]
 
 const Header = (props) => {

@@ -16,6 +16,7 @@ import SliderPage from './pages/SliderPage'
 import GalleryPage from './pages/GalleryPage'
 import SliderGalleryPage from './pages/SliderGalleryPage'
 import ModalPage from './pages/ModalPage'
+import PaginationPage from './pages/PaginationPage'
 
 const App = () => {
   return (
@@ -41,6 +42,8 @@ const App = () => {
               <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/slider-gallery" element={<SliderGalleryPage />} />
               <Route path="/modal" element={<ModalPage />} />
+              <Route path="/modal" element={<ModalPage />} />
+              <Route path="/pagination" element={<PaginationPage />} />
             </Route>
           </Routes>
         </BrowserRouter>
