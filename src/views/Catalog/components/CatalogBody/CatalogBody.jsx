@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductCard from '../ProductCard/ProductCard'
+import ProductCard from '../../../../components/ProductCard/ProductCard'
 import './CatalogBody.css'
 import { Link } from 'react-router-dom'
 

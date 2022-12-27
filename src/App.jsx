@@ -17,6 +17,7 @@ import GalleryPage from './pages/GalleryPage'
 import SliderGalleryPage from './pages/SliderGalleryPage'
 import ModalPage from './pages/ModalPage'
 import PaginationPage from './pages/PaginationPage'
+import CompareSliderPage from './pages/CompareSliderPage'
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
               <Route path="/modal" element={<ModalPage />} />
               <Route path="/modal" element={<ModalPage />} />
               <Route path="/pagination" element={<PaginationPage />} />
+              <Route path="/compare-slider" element={<CompareSliderPage />} />
             </Route>
           </Routes>
         </BrowserRouter>

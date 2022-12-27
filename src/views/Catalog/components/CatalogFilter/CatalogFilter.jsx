@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Input from '../Input/Input'
-import { defaultCategory } from '../../views/Catalog/Catalog'
+import Input from '../../../../components/Input/Input'
+import { defaultCategory } from '../../Catalog'
 import './CatalogFilter.css'
 
 const CatalogFilter = (props) => {

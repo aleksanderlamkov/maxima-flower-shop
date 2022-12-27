@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import ProductCard from '../../components/ProductCard/ProductCard'
-import CatalogBody from '../../components/CatalogBody/CatalogBody'
-import CatalogFilter from '../../components/CatalogFilter/CatalogFilter'
+import CatalogBody from './components/CatalogBody/CatalogBody'
+import CatalogFilter from './components/CatalogFilter/CatalogFilter'
 import Pagination from '../../components/Pagination/Pagination'
 import './Catalog.css'
 
